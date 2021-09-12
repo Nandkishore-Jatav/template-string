@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template String</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let user = "Nandkishore Jatav";
+		let marks = 369;
+		document.write("Hellow " + user + "are you fine");
+
+		//**********************************	
+		document.write("<h3>Template String</h3>");
+		let a = `Hello "${user}" templater 
+			string :-'${marks}'.`;
+		document.write(a + "<hr>");
+		console.log(a);
+		//**********************************
+		
+		let fname, lname;
+		fname = "Nandkishore";
+		lname = "Jatav";
+
+		function fullname(fname, lname){
+			return `${fname} ${lname}`;
+		}
+
+		let name = `Hello "Mr.${fullname (fname,lname)}" welcome to my home`;
+		document.write(name);
+		console.log(name);
+	</script>
+</body>
+</html>
